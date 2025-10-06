@@ -429,7 +429,7 @@ function setupFormHandling() {
         successMessage.className = 'status status--success';
         successMessage.style.marginTop = '20px';
         successMessage.innerHTML = `
-            <span>✅ Thank you for your interest! This is a sample form. Replace with your Google Form embed code.</span>
+            <span>✅ Thank you for your interest!</span>
         `;
         
         formContainer.appendChild(successMessage);
