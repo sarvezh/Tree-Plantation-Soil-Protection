@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Plantation & Soil Protection Initiative</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>🌱 TreeCare Initiative</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#conservation" class="nav-link">Conservation</a>
+                <a href="#guide" class="nav-link">Planting Guide</a>
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#form" class="nav-link">Join Us</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Protecting Our Planet Through Trees & Soil Conservation</h1>
+            <p class="hero-subtitle">Join our mission to combat deforestation, prevent soil erosion, and create a sustainable future through strategic tree plantation and soil protection initiatives.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">4.7M</span>
+                    <span class="stat-label">Hectares Lost Annually</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">92.4M</span>
+                    <span class="stat-label">Hectares Affected by Erosion</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">48 lbs</span>
+                    <span class="stat-label">CO2 Absorbed per Tree</span>
+                </div>
+            </div>
+            <button class="btn btn--primary btn--lg" onclick="scrollToSection('form')">Join Our Initiative</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Tree Plantation & Soil Protection Matter</h2>
+                <p>Trees and healthy soil are fundamental to our planet's ecosystem. Understanding their importance is the first step toward effective conservation.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>The Environmental Crisis</h3>
+                    <p>Our planet faces unprecedented environmental challenges. With <strong>4.7 million hectares</strong> of forest lost annually and <strong>92.4 million hectares</strong> affected by soil erosion in India alone, immediate action is crucial.</p>
+                    <p>Trees serve as nature's air purifiers, carbon storage systems, and soil protectors. A single mature tree can absorb <strong>48 pounds of CO2</strong> annually and cool urban areas by up to <strong>10°F</strong>.</p>
+                    <ul class="benefits-list">
+                        <li>Nearly 50% of terrestrial biodiversity resides in forests</li>
+                        <li>Trees reduce stormwater runoff by 15-27% of annual rainfall</li>
+                        <li>Urban forests can improve air quality by up to 30%</li>
+                        <li>Tree roots prevent soil erosion and improve water infiltration</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1759675825/pplx_project_search_images/b097628100e617d9507700867aafc78f77d24e2e.png" alt="Students planting trees for environmental awareness" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tree Benefits Section -->
+    <section id="benefits" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Environmental Benefits of Tree Plantation</h2>
+                <p>Discover how trees contribute to environmental health and sustainability</p>
+            </div>
+            <div class="benefits-grid" id="benefits-grid">
+                <!-- Benefits will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Soil Conservation Section -->
+    <section id="conservation" class="section conservation-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soil Conservation Methods</h2>
+                <p>Effective strategies to protect and preserve our precious soil resources</p>
+            </div>
+            <div class="conservation-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="physical">Physical Methods</button>
+                    <button class="tab-btn" data-tab="biological">Biological Methods</button>
+                    <button class="tab-btn" data-tab="chemical">Chemical Methods</button>
+                </div>
+                <div class="tab-content" id="conservation-content">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planting Guide Section -->
+    <section id="guide" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Step-by-Step Tree Planting Guide</h2>
+                <p>Follow our comprehensive guide to ensure successful tree establishment</p>
+            </div>
+            <div class="planting-image">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1756403039/pplx_project_search_images/fc5ff58ded508cd378bb764c56702eb3e805f714.png" alt="Person planting a tree sapling" class="responsive-img">
+            </div>
+            <div class="steps-timeline" id="steps-timeline">
+                <!-- Steps will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+            
+    </section>
+    <!-- Community Engagement Section -->
+    <section id="community" class="section community-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community Engagement Strategies</h2>
+                <p>Building stronger communities through environmental action</p>
+            </div>
+            <div class="community-image">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1759675822/pplx_project_search_images/e5fa842a81347269cacca97549583342d09ad596.png" alt="Community volunteers planting trees" class="responsive-img">
+            </div>
+            <div class="community-grid" id="community-grid">
+                <!-- Community strategies will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section>
+  <div class="card-locality">
+    <h2>Pune Locality Soil & Plant Guide</h2>
+    <select id="locality-select">
+      <option value="" disabled selected>Select a locality</option>
+      <option value="Pune City">Pune City</option>
+      <option value="Maval">Maval</option>
+      <option value="Khed">Khed</option>
+      <option value="Mulshi">Mulshi</option>
+      <option value="Velhe">Velhe</option>
+      <option value="Bhor">Bhor</option>
+      <option value="Ambegaon">Ambegaon</option>
+      <option value="Junnar">Junnar</option>
+      <option value="Haveli">Haveli</option>
+      <option value="Riverside">Riverside and valleys</option>
+      <option value="Kothrud">Kothrud</option>
+    </select>
+    <div id="locality-info" style="display:none;">
+      <h3 id="locality-name"></h3>
+      <p><span class="font-semibold">Soil Type:</span> <span id="soil-type"></span></p>
+      <p><span class="font-semibold">Average Humidity:</span> <span id="humidity"></span></p>
+      <div><span class="font-semibold">Suitable Plants/Trees:</span></div>
+      <ul id="plant-list"></ul>
+    </div>
+  </div>
+</section>
+<script>
+  const puneData = {
+    "Pune City": {
+      soilType: "Slightly deep, well-drained, fine calcareous soils",
+      humidity: "60-70%",
+      suitablePlants: ["Neem","Peepal","Indian Rosewood","Mango","Palak","Bhendi","Capsicum"],
+    },
+    "Maval": {
+      soilType: "Shallow well-drained clayey soils on gently sloping lands",
+      humidity: "55-65%",
+      suitablePlants: ["Jamun","Indian Laburnum","Aloevera","Pothos","Corn","Doodhi","Karela"],
+    },
+    "Khed": {
+      soilType: "Shallow well-drained clayey soils on gently sloping lands",
+      humidity: "55-65%",
+      suitablePlants: ["Jamun","Indian Laburnum","Aloevera","Pothos","Corn","Doodhi","Karela"],
+    },
+    "Mulshi": {
+      soilType: "Shallow well-drained clayey soils on gently sloping lands",
+      humidity: "55-65%",
+      suitablePlants: ["Jamun","Indian Laburnum","Aloevera","Pothos","Corn","Doodhi","Karela"],
+    },
+    "Velhe": {
+      soilType: "Shallow well-drained clayey soils on gently sloping lands",
+      humidity: "55-65%",
+      suitablePlants: ["Jamun","Indian Laburnum","Aloevera","Pothos","Corn","Doodhi","Karela"],
+    },
+    "Bhor": {
+      soilType: "Shallow well-drained clayey soils on gently sloping lands",
+      humidity: "55-65%",
+      suitablePlants: ["Jamun","Indian Laburnum","Aloevera","Pothos","Corn","Doodhi","Karela"],
+    },
+    "Ambegaon": {
+      soilType: "Deep, moderately well-drained, strongly calcareous fine soils",
+      humidity: "65-75%",
+      suitablePlants: ["Banyan","Neem","Peepal","Syngonium","Peace Lily","Amaranths"],
+    },
+    "Junnar": {
+      soilType: "Deep, moderately well-drained, strongly calcareous fine soils",
+      humidity: "65-75%",
+      suitablePlants: ["Banyan","Neem","Peepal","Syngonium","Peace Lily","Amaranths"],
+    },
+    "Haveli": {
+      soilType: "Deep, moderately well-drained, strongly calcareous fine soils",
+      humidity: "65-75%",
+      suitablePlants: ["Banyan","Neem","Peepal","Syngonium","Peace Lily","Amaranths"],
+    },
+    "Riverside": {
+      soilType: "Very deep, well-drained loamy soils",
+      humidity: "70-80%",
+      suitablePlants: ["Jamun","Mango","Palm","Capsicum","Bhendi","Sweet Potato"],
+    },
+    "Kothrud": {
+      soilType: "Very deep, well-drained loamy soils",
+      humidity: "70-80%",
+      suitablePlants: ["Jamun","Mango","Palm","Capsicum","Bhendi","Sweet Potato"],
+    },
+  };
+
+  const selectEl = document.getElementById("locality-select");
+  const infoDiv = document.getElementById("locality-info");
+  const nameEl = document.getElementById("locality-name");
+  const soilEl = document.getElementById("soil-type");
+  const humidityEl = document.getElementById("humidity");
+  const plantListEl = document.getElementById("plant-list");
+
+  selectEl.addEventListener("change", (event) => {
+    const localityKey = event.target.value;
+    if (puneData[localityKey]) {
+      const data = puneData[localityKey];
+      nameEl.textContent = localityKey;
+      soilEl.textContent = data.soilType;
+      humidityEl.textContent = data.humidity;
+      plantListEl.innerHTML = "";
+      data.suitablePlants.forEach((plant) => {
+        const li = document.createElement("li");
+        li.textContent = plant;
+        plantListEl.appendChild(li);
+      });
+      infoDiv.style.display = "block";
+    } else {
+      infoDiv.style.display = "none";
+    }
+  });
+</script>
+
+
+    <!-- Google Form Section -->
+    <section id="form" class="section form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Join Our Tree Plantation Initiative</h2>
+                <p>Help us make a difference by participating in our environmental conservation program</p>
+            </div>
+            <div class="form-container">
+                <div class="form-info">
+                    <h3>How to Participate</h3>
+                    <p>Our survey helps us understand community interest and plan effective tree plantation campaigns. Your responses will help us:</p>
+                    <ul>
+                        <li>Identify optimal planting locations</li>
+                        <li>Determine community preferences for tree species</li>
+                        <li>Plan educational workshops and events</li>
+                        <li>Coordinate volunteer activities</li>
+                    </ul>
+                </div>
+                <div class="form-embed">
+                    <div class="form-placeholder">
+                        <h4>Google Form Survey</h4>
+                        <p>Help us out with a quick survey down below:</p>
+                        <code><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc10ao4AcB1b0oAfdoT3jQ0Ch4SArX6JvI-7Mzw6IKtcINmhA/viewform?embedded=true" width="640" height="5080" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></code>
+                        <div class="sample-form">
+                            <h5>Engage in plantation</h5>
+                            <form class="sample-contact-form">
+                                <div class="form-group">
+                                    <label class="form-label">Name *</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Preferred Tree Species</label>
+                                    <select class="form-control">
+                                        <option>Neem</option>
+                                        <option>Banyan</option>
+                                        <option>Mango</option>
+                                        <option>Peepal</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Available for Volunteering?</label>
+                                    <select class="form-control">
+                                        <option>Yes, weekly</option>
+                                        <option>Yes, monthly</option>
+                                        <option>Occasionally</option>
+                                        <option>Not available</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn--primary">Submit Response</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Analysis Section -->
+    <section id="analysis" class="section analysis-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Response Analysis & Insights</h2>
+                <p>Data-driven insights from community responses to optimize our tree plantation efforts</p>
+            </div>
+            <div class="analysis-grid">
+                <div class="analysis-text">
+                    <h3>Understanding Community Engagement</h3>
+                    <p>Our analysis of form responses provides valuable insights into community preferences, availability, and environmental awareness levels.</p>
+                    <div class="insights-list">
+                        <div class="insight-item">
+                            <span class="insight-icon">📊</span>
+                            <div>
+                                <h4>Response Patterns</h4>
+                                <p>Track participation rates and demographic preferences</p>
+                            </div>
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-icon">🌳</span>
+                            <div>
+                                <h4>Tree Species Preferences</h4>
+                                <p>Identify most requested native species for procurement</p>
+                            </div>
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-icon">🤝</span>
+                            <div>
+                                <h4>Volunteer Availability</h4>
+                                <p>Optimize event scheduling based on volunteer capacity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h4>Sample Analysis Charts</h4>
+                    <div class="chart-wrapper" style="position: relative; height: 300px;">
+                        <canvas id="responseChart"></canvas>
+                    </div>
+                    <div class="chart-wrapper" style="position: relative; height: 300px; margin-top: 20px;">
+                        <canvas id="speciesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 TreeCare Initiative</h3>
+                    <p>Dedicated to environmental conservation through strategic tree plantation and soil protection.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Project</a></li>
+                        <li><a href="#benefits">Tree Benefits</a></li>
+                        <li><a href="#guide">Planting Guide</a></li>
+                        <li><a href="#form">Join Initiative</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <ul class="contact-info">
+                        <li>📧 info@treecareinitiative.com</li>
+                        <li>📞 +91 98765 43210</li>
+                        <li>📍 College Campus, Environmental Dept.</li>
+                        <li>🌐 Follow us on social media</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tree Plantation & Soil Protection Initiative. Created for college environmental awareness project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
