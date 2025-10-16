@@ -545,5 +545,37 @@ document.addEventListener('DOMContentLoaded', function() {
     enhanceScrollBehavior();
 });
 
+const sensorParts = {
+  p1: { title: "Sensor Pins/Probe", desc: "Metallic prongs inserted into soil to detect moisture via conductivity." },
+  p2: { title: "Sensing Area", desc: "Sensitive region for direct contact with soil and water." },
+  p3: { title: "Comparator IC", desc: "Compares sensed resistance and generates digital output." },
+  p4: { title: "LED Indicator", desc: "Glows to visually indicate if soil is dry/wet." },
+  p5: { title: "Power Pin (VCC)", desc: "Connector pin for supplying voltage (commonly 3.3V/5V)." },
+  p6: { title: "Analog Output Pin", desc: "Provides variable voltage representing measured humidity." },
+  p7: { title: "Digital Output Pin", desc: "Binary signal (dry/wet) from on-board comparator." },
+  p8: { title: "Ground Pin", desc: "Electrical ground reference for safe circuit operation." }
+};
+
+document.querySelectorAll('.sensor-btn-circ').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Highlight active button
+    document.querySelectorAll('.sensor-btn-circ').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    // Display related info
+    const part = btn.dataset.part;
+    const info = sensorParts[part];
+    const infoBox = document.getElementById('sensor-part-info');
+    if (info) {
+      infoBox.innerHTML =
+        `<h3 class="text-xl font-bold mb-2 text-emerald-300">${info.title}</h3><p>${info.desc}</p>`;
+      infoBox.style.display = 'block';
+      infoBox.scrollIntoView({behavior:"smooth", block:"nearest"});
+    } else {
+      infoBox.style.display = 'none';
+    }
+  });
+});
+
+
 // Export functions for global access
 window.scrollToSection = scrollToSection;

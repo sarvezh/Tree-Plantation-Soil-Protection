@@ -1488,3 +1488,57 @@ html {
     font-size: 0.98rem;
   }
 }
+.sensor-circle {
+  position: relative;
+  min-width: 260px;
+  min-height: 700px;
+}
+.sensor-img {
+  width: 250px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 63%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 0 0 20px #0d4630BB;
+}
+.sensor-btn-circ {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: rotate(var(--angle)) translate(300px) rotate(calc(-1 * var(--angle)));
+  transform-origin: center;
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  border-radius: 299px;
+  padding: 0.3em 1.1em;
+  font-size: 0.96rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 10px #062e2222;
+  transition: background 0.15s, box-shadow 0.2s;
+  z-index: 2;
+}
+.sensor-btn-circ:hover, .sensor-btn-circ.active {
+  background: #065f46;
+  box-shadow: 0 2px 16px #089154cc;
+}
+.pop-info {
+  color: #baf7d2;
+}
+@media (max-width: 480px) {
+  .sensor-circle { min-width: 185px; min-height: 185px;}
+  .sensor-img { width: 110px; }
+  .sensor-btn-circ {
+    padding: 0.18em 0.7em;
+    font-size: 0.84rem;
+  }
+}
+.sensor-bg {
+  background: #162415;
+  border-radius: 1.2em;
+  box-shadow: 0 6px 40px #2c4d2f33;
+  margin-bottom: 0;
+}

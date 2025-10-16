@@ -270,6 +270,26 @@
   });
 </script>
 
+<section id="sensor-info-section" class="my-16 py-12 flex flex-col items-center w-full sensor-bg">
+  <h2 class="text-2xl font-bold mb-10 text-emerald-400 text-center">Soil Humidity Sensor Interactive View</h2>
+  <!-- Your sensor-circle image and buttons here -->
+    <div class="relative sensor-circle mx-auto" style="width:270px; height:270px;">
+    <img src="https://i.ibb.co/qFjcZJWx/image.jpg" alt="Soil Humidity Sensor" class="rounded-lg block mx-auto shadow-md sensor-img">
+    <!-- Eight buttons positioned in a circle -->
+    <button class="sensor-btn-circ" style="--angle:0deg" data-part="p1">Part 1</button>
+    <button class="sensor-btn-circ" style="--angle:45deg" data-part="p2">Part 2</button>
+    <button class="sensor-btn-circ" style="--angle:90deg" data-part="p3">Part 3</button>
+    <button class="sensor-btn-circ" style="--angle:135deg" data-part="p4">Part 4</button>
+    <button class="sensor-btn-circ" style="--angle:180deg" data-part="p5">Part 5</button>
+    <button class="sensor-btn-circ" style="--angle:225deg" data-part="p6">Part 6</button>
+    <button class="sensor-btn-circ" style="--angle:270deg" data-part="p7">Part 7</button>
+    <button class="sensor-btn-circ" style="--angle:315deg" data-part="p8">Part 8</button>
+  </div>
+  <div id="sensor-part-info" class="mt-10 w-full max-w-lg text-center bg-[#182820] p-5 rounded-lg shadow pop-info" style="display:none"></div>
+</section>
+
+
+
 
     <!-- Google Form Section -->
     <section id="form" class="section form-section">
